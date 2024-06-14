@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharefun Platform</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="/logo/logo1.jpg" alt="Sharefun Logo" width="250" height="250">
+            </div>
+            <div>
+                <form method="GET" action="/search">
+                    <input type="text" name="search" required>
+                    <input type="submit" value="Search">
+                </form>
+            </div>
+            <div class="login">
+                <a href="#login">Login</a>
+                <form action="/login" method="POST">
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" required>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" required>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        <nav class="horizontal-nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#pages">Pages</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <form method="POST" action="/create-post">
+            <input type="text" name="post" required>
+            <input type="submit" value="Add Post">
+        </form>
+    </div>
+    <main>
+        <div>
+            <form method="POST" action="/add-comment">
+                <input type="text" name="comment" required>
+                <input type="submit" value="Add Comment">
+            </form>
+        </div>
+    </main>
+    <script src="index.js" type="module"></script>
+</body>
+<footer>
+    <nav class="footer-nav">
+        <ul>
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms of Service</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <p>&copy; 2024 Sharefun Platform. All rights reserved.</p>
+</footer>
+</html>
